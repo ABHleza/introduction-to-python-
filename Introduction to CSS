@@ -1,0 +1,77 @@
+. Box Model
+The box model is the foundation of CSS layout. It consists of:
+margin: Space outside the border
+border: Visible outline of an element
+padding: Space between content and border
+content: Actual content of an element
+CSS
+div {
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+2. Display Property
+The display property controls how an element is displayed.
+block: Occupies full width, starts on new line
+inline: Occupies only content width, stays on same line
+inline-block: Combination of block and inline
+CSS
+span {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background-color: #f0f0f0;
+}
+3. Positioning
+Positioning controls how an element is positioned within its parent.
+static: Default positioning
+relative: Relative to normal position
+absolute: Relative to nearest positioned ancestor
+fixed: Relative to viewport
+CSS
+div {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  width: 200px;
+  height: 150px;
+  background-color: #f0f0f0;
+}
+4. Flexbox
+Flexbox is a layout mode that allows for flexible and responsive layouts.
+display: flex: Enables flexbox layout
+flex-direction: Controls direction of flex items
+justify-content: Controls alignment of flex items
+align-items: Controls alignment of flex items
+CSS
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  width: 100px;
+  height: 50px;
+  background-color: #f0f0f0;
+}
+5. Grid
+Grid is a layout mode that allows for two-dimensional grids.
+display: grid: Enables grid layout
+grid-template-columns: Controls number and size of grid columns
+grid-template-rows: Controls number and size of grid rows
+grid-gap: Controls gap between grid cells
+CSS
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.item {
+  background-color: #f0f0f0;
+}
